@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Web Application</title>
+  <style>
+    /* CSS styles go here */
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+<body>
+  <h1>Welcome to the Dynamic Web Application!</h1>
+  
+  <div id="content">
+    <!-- Form Validation -->
+    <form>
+  <input type="text" required>
+  <button type="submit">Submit</button>
+</form>
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', handleSubmit);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const input = document.querySelector('input');
+    if (input.value === '') {
+      alert('Please enter a value');
+    } else {
+      // Submit the form
+    }
+  }
+</script>
+  </div>
+  
+  <script>
+
+  </script>
+</body>
+</html>
+
